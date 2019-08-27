@@ -126,6 +126,7 @@ void InverterPilha() {
         vetor[i] -> prox = Topo;
         Topo = vetor[i];
     }
+    free(vetor);
 }
 
 int main() {
@@ -149,5 +150,6 @@ int main() {
    BuscaSequencial(400);
    printf("A pilha foi invertida para: \n\n");
    InverterPilha();
+   Empilhar(5000);
    ImprimirPilha();
 }
